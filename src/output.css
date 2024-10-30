@@ -2685,10 +2685,6 @@ video {
   height: 1.5rem;
 }
 
-.w-4{
-  width: 1rem;
-}
-
 .w-3{
   width: 0.75rem;
 }
@@ -2699,14 +2695,6 @@ video {
 
 .justify-center{
   justify-content: center;
-}
-
-.gap-8{
-  gap: 2rem;
-}
-
-.gap-6{
-  gap: 1.5rem;
 }
 
 .gap-5{
@@ -2722,11 +2710,6 @@ video {
   background-color: rgb(255 149 0 / var(--tw-bg-opacity));
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-3\.5{
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
@@ -2736,18 +2719,9 @@ video {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .text-red-500{
@@ -2755,16 +2729,7 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.text-red-600{
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.underline{
-  text-decoration-line: underline;
 }
