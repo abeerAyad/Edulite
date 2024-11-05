@@ -63,18 +63,20 @@
  <!-- Main -->
   <main>
 
-      <!-- Pricing -->
-      <section class="mt-32">
+       <!-- Pricing -->
+     <section class="mt-32" id="#pricing">
         <div class="container mx-auto">
-            <div class="flex justify-center">
-                <button class="flex bg-white p-2">
-                    <a href="#" class="px-6 py-4 rounded bg-primary text-gray-15">Monthly</a>
-                    <a href="#" class="px-6 py-4 rounded bg-white text-gray-15">Yearly</a>
-                </button>
-            </div>
+            
+                <div class="flex justify-center">
+                    <button class="flex bg-white p-2">
+                        <a href="#" class="btn month-btn px-6 py-4 rounded bg-primary text-gray-15">Monthly</a>
+                        <a href="#" class="btn year-btn px-6 py-4 rounded text-gray-15">Yearly</a>
+                    </button>
+                </div>
+            
             
             <div class="container mx-auto">
-                <div class="card grid grid-cols-1 md:grid-cols-2 bg-white p-16 justify-center  mt-16 gap-8 ">
+                <div class="month-price card grid grid-cols-1 md:grid-cols-2 bg-white p-16 justify-center  mt-16 gap-8 ">
                     <div class="border border-[#F1F1F3] p-8 flex flex-col items-center justify-center">
                         <button class="bg-[#FFF9F0] w-[90%] py-3 rounded-lg border border-[#FFEACC]">
                             <a href="#" class="text-gray-15 text-[22px]">Free Plan</a>
@@ -247,10 +249,183 @@
                     </div>
                     
                 </div>
+
+                <div class="year-price hidden card grid grid-cols-1 md:grid-cols-2 bg-white p-16 justify-center  mt-16 gap-8 ">
+                    <div class="border border-[#F1F1F3] p-8 flex flex-col items-center justify-center">
+                        <button class="bg-[#FFF9F0] w-[90%] py-3 rounded-lg border border-[#FFEACC]">
+                            <a href="#" class="text-gray-15 text-[22px]">Free Plan</a>
+                        </button>
+                        <div class="py-8 ">
+                            <h2 class="text-gray-15 text-7xl font-bold">
+                                $0
+                                 <sub class="text-lg p-0">/Year</sub>
+                            </h2>
+                           
+    
+                        </div>
+                        <div class=" pt-8 border border-[#F1F1F3]">
+                            <h3 class="text-xl text-gray-15 text-center">Available Features</h3>
+                            <ul class="flex flex-col gap-8  mt-6 pb-8 px-2 md:px-8">
+                                <li class="flex items-center gap-4  border border-[#F1F1F3] p-2 md:p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Access to selected free courses.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-2 md:p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Limited course materials and resources.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-2 md:p-4 rounded">
+                                    <div class="w-8 h-8  rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg> 
+                                          
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Basic community support.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-2 md:p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">No certification upon completion.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-2 md:p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Ad-supported platform.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-2 md:p-4 rounded">
+                                    <div class=" w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Access to exclusive Pro Plan community forums.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-2 md:p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                                          </svg>
+                                          
+                                          
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Early access to new courses and updates.</p>
+                                </li>
+                            </ul>
+                            <button class="w-full rounded-b-lg bg-primary flex items-center justify-center py-5">
+                                <a href="" class="text-white text-lg">Get Started</a>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="border border-gray p-4 flex flex-col items-center justify-center">
+                        <button class="bg-[#FFF9F0] w-[90%] py-3 rounded-lg border border-[#FFEACC]">
+                            <a href="#" class="text-gray-15 text-[22px]">Pro Plan</a>
+                        </button>
+                        <div class="py-8 ">
+                            <h2 class="text-gray-15 text-7xl font-bold">
+                                $200
+                                 <sub class="text-lg p-0">/year</sub>
+                            </h2>
+                           
+    
+                        </div>
+                        <div class=" pt-8 border border-[#F1F1F3]">
+                            <h3 class="text-xl text-gray-15 text-center">Available Features</h3>
+                            <ul class="flex flex-col gap-8  mt-6 pb-8 px-2 md:px-8">
+                                <li class="flex items-center gap-4  border border-[#F1F1F3] p-2 md:p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg md:text-lg">Unlimited access to all courses.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Unlimited course materials and resources.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Priority support from instructors.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Course completion certificates.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Ad-free experience.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Access to exclusive Pro Plan community forums.</p>
+                                </li>
+    
+                                <li class="flex items-center gap-4 border border-[#F1F1F3] p-4 rounded">
+                                    <div class="w-8 h-8 rounded-lg bg-[#FFF4E5] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                                          </svg>
+                                    </div>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Early access to new courses and updates.</p>
+                                </li>
+                            </ul>
+                            <button class="w-full rounded-b-lg bg-primary flex items-center justify-center py-5">
+                                <a href="" class="text-white text-lg">Get Started</a>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
-    </div>
-    </div>
+   
     </section>
 
     <!-- FQA -->
@@ -468,6 +643,7 @@
     </div>
 </footer>
 <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="../../js/main.js"></script>
 
 </body>
 </html>
