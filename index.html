@@ -865,8 +865,8 @@
     </section>
 
     <!-- FQA -->
- <section id="#our-faq">
-    <div class="container mx-auto">
+ <section>
+    <div class="container mx-auto px-4 md:px-0">
         <div class="grid grid-cols-1  md:grid-cols-3 mt-32 bg-white rounded-lg gap-8 py-16 px-2 md:px-8">
                 <div class=" p-4 rounded-lg">
                   <h3 class="font-bold text-4xl my-4">Frequently<br /> Asked Questions</h3>
@@ -874,137 +874,63 @@
                   <button class="block mt-8 px-8 py-3 rounded font-medium border bordr-[#F1F1F3]  cursor-pointer">See All FAQ’s</button>
                 </div>
             
-                <div class="p-6 md:col-span-2">
-                    <div id="accordionExample" data-accordion="collapse" class="flex flex-col gap-8">
+                <div class="p-2 md:p-6 md:col-span-2 flex flex-col gap-8">
+                    <div class="collapse collapse-plus border border-[#F1F1F3] p-2 md:p-4 rounded">
+                        <input type="radio" name="my-accordion-5" checked="checked" />
+                        <div class="collapse-title text-lg md:text-xl font-medium ">
+                            Can I enroll in multiple courses at once?
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#4C4C4D] my-4">
+                                Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
+                                </p>
+                              <button class="flex items-center justify-between p-2  md:p-8 w-full   rounded-lg bg-[#F7F7F8] font-semibold">
+                                Enrollment Process for Different Courses
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                                    <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+                                  </svg>
+                                  
+                              </button>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus border border-[#F1F1F3] p-4 rounded">
+                        <input type="radio" name="my-accordion-5" />
+                        <div class="collapse-title  font-medium text-lg md:text-xl ">What kind of support can I expect from instructors?</div>
+                        <div class="collapse-content">
+                            <div class="p-4 text-gray-15 text-sm md:text-lg">
+                                Our instructors are available to help answer questions and provide guidance through discussion boards and direct messages.
+                              </div>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus border border-[#F1F1F3] p-4 rounded">
+                        <input type="radio" name="my-accordion-5" />
+                        <div class="collapse-title  font-medium text-lg md:text-xl ">Are the courses self-paced or do they have specific start and end dates?</div>
+                        <div class="collapse-content">
+                            <div class="p-4 text-gray-15 text-sm md:text-lg">
+                                Our courses are mostly self-paced, but some have set start and end dates. Check the course details for more info.
+                              </div>
+                        </div>
+                      </div>
 
-                      <!-- FAQ Item 1 -->
-                       <div class="border border-[#F1F1F3] p-4 rounded">
+                      <div class="collapse collapse-plus border border-[#F1F1F3] p-4 rounded">
+                        <input type="radio" name="my-accordion-5" />
+                        <div class="collapse-title  font-medium text-lg md:text-xl ">Are there any prerequisites for the courses?</div>
+                        <div class="collapse-content">
+                            <div class="p-4 text-gray-15 text-sm md:text-lg">
+                                Some courses have prerequisites, while others are open to all skill levels. Be sure to review each course’s requirements.
+                              </div>
+                        </div>
+                      </div>
 
-                           <h3 id="headingOne">
-                             <button type="button" class="flex justify-between items-center w-full bg-transparent p-4 font-medium text-left text-gray-700" data-accordion-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                               <span class="text-xl">Can I enroll in multiple courses at once?</span>
-                               <div class="w-12 h-12 bg-[#FFF4E5] rounded-lg flex items-center justify-center ">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 icon-plus">
-                                    <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
-                                  </svg>
-                                  
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-minus hidden w-6 h-6 shrink-0" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                                   </svg>
-                               </div>
-                               
-                             </button>
-                           </h3>
-                           <div id="collapseOne" class="hidden" aria-labelledby="headingOne">
-                             <div class="py-8">
-                               <p class="text-[#4C4C4D] my-4">
-                                 Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
-                                 </p>
-                               <button class="flex items-center justify-between  px-8 py-8 w-full   rounded-lg bg-[#F7F7F8] font-semibold">
-                                 Enrollment Process for Different Courses
-                                 <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                                     <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
-                                   </svg>
-                                   
-                               </button>
-                             </div>
-                           </div>
-                       </div>
-                      <!-- FAQ Item 2 -->
-                      <div class="border border-[#F1F1F3] p-4 rounded">
-                          <h3 id="headingTwo">
-                            <button type="button" class="flex justify-between items-center w-full bg-transparent p-4 font-medium text-left text-gray-700" data-accordion-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              <span class="text-xl">What kind of support can I expect from instructors?</span>
-                            <div class="w-12 h-12 bg-[#FFF4E5] rounded-lg flex items-center justify-center">
-    
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 icon-plus">
-                                    <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
-                                  </svg>
-                                  
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-minus hidden w-6 h-6 shrink-0" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                                   </svg>
-                            </div>
-                              
-                            </button>
-                          </h3>
-                          <div id="collapseTwo" class="hidden" aria-labelledby="headingTwo">
-                            <div class="p-4 text-gray-600 text-lg">
-                              Our instructors are available to help answer questions and provide guidance through discussion boards and direct messages.
-                            </div>
-                          </div>
+                      <div class="collapse collapse-plus border border-[#F1F1F3] p-4 rounded">
+                        <input type="radio" name="my-accordion-5" />
+                        <div class="collapse-title text-lg md:text-xl font-medium ">Can I download the course materials for offline access?</div>
+                        <div class="collapse-content">
+                            <div class="p-4 text-gray-15 text-sm md:text-lg">
+                                Yes, you can download materials for most courses and study offline whenever it's convenient for you.
+                              </div>
+                        </div>
                       </div>
-                      <!-- FAQ Item 3 -->
-                      <div class="border border-[#F1F1F3] p-4 rounded">
-                        <h3 id="headingThree">
-                            <button type="button" class="flex justify-between items-center w-full bg-transparent p-4 font-medium text-left text-gray-700" data-accordion-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              <span class="text-xl">Are the courses self-paced or do they have specific start and end dates?</span>
-                              <div class="w-12 h-12 bg-[#FFF4E5] rounded-lg flex items-center justify-center">
-    
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 icon-plus">
-                                    <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
-                                  </svg>
-                                  
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-minus hidden w-6 h-6 shrink-0" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                                   </svg>
-                            </div>
-                            </button>
-                          </h3>
-                          <div id="collapseThree" class="hidden" aria-labelledby="headingThree">
-                            <div class="p-4 text-gray-600 text-lg">
-                              Our courses are mostly self-paced, but some have set start and end dates. Check the course details for more info.
-                            </div>
-                          </div>
-                      </div>
-                      
-                      <!-- FAQ Item 4 -->
-                      <div class="border border-[#F1F1F3] p-4 rounded">
-                          <h3 id="headingFour">
-                            <button type="button" class="flex justify-between items-center w-full bg-transparent p-4 font-medium text-left text-gray-700" data-accordion-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              <span class="text-xl">Are there any prerequisites for the courses?</span>
-                              <div class="w-12 h-12 bg-[#FFF4E5] rounded-lg flex items-center justify-center">
-    
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 icon-plus">
-                                    <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
-                                  </svg>
-                                  
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-minus hidden w-6 h-6 shrink-0" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                                   </svg>
-                            </div>
-                            </button>
-                          </h3>
-                          <div id="collapseFour" class="hidden" aria-labelledby="headingFour">
-                            <div class="p-4 text-gray-600 text-lg">
-                              Some courses have prerequisites, while others are open to all skill levels. Be sure to review each course’s requirements.
-                            </div>
-                          </div>
-                      </div>
-                      <!-- FAQ Item 5 -->
-                      <div class="border border-[#F1F1F3] p-4 rounded">
-                          <h3 id="headingFive">
-                            <button type="button" class="flex justify-between items-center w-full bg-transparent p-4 font-medium text-left text-gray-700" data-accordion-target="#collapseFive" aria-expanded="false" >
-                              <span class="text-xl">Can I download the course materials for offline access?</span>
-                              <div class="w-12 h-12 bg-[#FFF4E5] rounded-lg flex items-center justify-center">
-    
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 icon-plus">
-                                    <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
-                                  </svg>
-                                  
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-minus hidden w-6 h-6 shrink-0" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                                   </svg>
-                            </div>
-                            </button>
-                          </h3>
-                          <div id="collapseFive" class="hidden" aria-labelledby="headingFive">
-                            <div class="p-4 text-gray-600 text-lg">
-                              Yes, you can download materials for most courses and study offline whenever it's convenient for you.
-                            </div>
-                          </div>
-                      </div>
-                    </div>
                   </div>
                   <div></div>
               </div>
