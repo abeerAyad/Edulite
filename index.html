@@ -60,24 +60,26 @@
 
     <section class="h-96 flex items-center justify-center">
         <div class="flex flex-col justify-center items-center">
-            <div class="px-2 ">
-                <div class="relative flex items-center bg-white gap-4 justify-center rounded-lg p-2 md:p-5">
-                    <img src="./public/asset/images/header/lines.svg" alt="" class="w-12 h-12 absolute left-0">
-                    <div class="bg-[#FFF4E5] w-8 h-8 md:w-11 md:h-11 rounded-lg flex items-center justify-center">
-                        <img src="./public/asset/images/header/icon.svg" alt="" class="w-6">
-                    </div>
-                    <h1 class="text-xl md:text-5xl font-bold">
+            
+                <div class="flex justify-center gap-4 flex-col">
+                    <div class="relative bg-white flex items-center gap-2 p-4 rounded-lg  w-fit m-auto">
+                      <img class="w-12 h-12 absolute top-[-30px] left-[-25px]" src="./public/asset/images/header/lines.svg"
+                        alt="decor">
+                      <div class="bg-[#FFF4E5] w-8 h-8 md:w-12 md:h-12 rounded-lg flex items-center justify-center">
+                        <img class="w-6 h-6" src="./public/asset/images/header/icon.svg" alt="power">
+                      </div>
+                      <h1 class="text-xl md:text-5xl font-bold">
                         <span class="text-primary">Unlock</span>
                         Your Creative Potential
                     </h1>
-                </div>
+                    </div>
                 <div class="text-center text-gray-15">
                     <p class="text-2xl md:text-3xl font-semibold my-4">with Online Design and Development Courses.</p>
                     <span class="text-sm md:text-lg px-2 md:px-0">Learn from Industry Experts and Enhance Your Skills.</span>
                 </div>
-            </div>
             
-            <div class="flex gap-2 my-6">
+            
+            <div class="flex items-center justify-center gap-2 my-6">
                 <button class="px-4 py-2  md:px-6 md:py-3.5 rounded-lg bg-primary text-white">
                     <a href="./public/pages/courses/index.html" class="text-sm md:text-lg">Explore Courses</a>
                 </button>
@@ -129,18 +131,29 @@
     </section>
 
 <!-- video edu -->
-<section class="relative w-full overflow-hidden mt-16 md:mt-32 px-4 md:px-0">
+<section class="mt-16 md:mt-32">
     <div class="container mx-auto">
-        <div class=" flex justify-center items-center w-full h-full relative  z-40  bg-cover bg-center rounded-lg shadow-lg overflow-hidden">            
-            <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop>
-                <source src="./public/asset/images/video/education.mp4" type="video/mp4">
-            </video>
-            <div class="relative z-10 w-full h-full">
-                <img src="./public/asset/images/video/bg-video.png" alt="bg video">
+        <div id="video-content" class="w-full  bg-custom-height relative rounded-lg cursor-pointer overflow-hidden">
+    
+            <img class="image-overlay w-full " src="./public/asset/images/video/bg-video.png" alt="video thumbnail">
+    
+            <div class="bg-overlay-custom">
+              <div class="circle-border-custom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6 text-white">
+                    <path d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                </svg>
+              </div>
             </div>
-        </div>
+    
+            <video class="video w-full h-full hidden" controls>
+              <source src="./public/asset/images/video/education.mp4" type="video/mp4">
+            </video>
+          </div>
     </div>
 </section>
+
+
+
 
 <!-- Benefits -->
     <section class="mt-16 md:mt-32" id="#benefits">
@@ -166,12 +179,10 @@
                     <div class="flex justify-end">
             
                         <div class="flex items-center justify-center mt-6 w-12 h-12 rounded-lg border border-[#F1F1F3] text-primary">
-                            <div class="rotate-75">
-            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z" clip-rule="evenodd" />
-                                  </svg>
-                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                                <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
+                              </svg>
+                              
                         </div>
                     </div>
                 </div>
@@ -185,12 +196,10 @@
                 <div class="flex justify-end">
             
                     <div class="flex items-center justify-center mt-6 w-12 h-12 rounded-lg border border-[#F1F1F3] text-primary">
-                        <div class="rotate-75">
-            
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z" clip-rule="evenodd" />
-                              </svg>
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
+                          </svg>
+                          
                     </div>
                 </div>
             </div>
@@ -204,12 +213,10 @@
                 <div class="flex justify-end">
             
                     <div class="flex items-center justify-center mt-6 w-12 h-12 rounded-lg border border-[#F1F1F3] text-primary">
-                        <div class="rotate-75">
-            
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z" clip-rule="evenodd" />
-                              </svg>
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
+                          </svg>
+                          
                     </div>
                 </div>
             </div>
@@ -223,12 +230,10 @@
                 <div class="flex justify-end">
             
                     <div class="flex items-center justify-center mt-6 w-12 h-12 rounded-lg border border-[#F1F1F3] text-primary">
-                        <div class="rotate-75">
-            
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z" clip-rule="evenodd" />
-                              </svg>
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
+                          </svg>
+                          
                     </div>
                 </div>
             </div>
@@ -242,12 +247,10 @@
                 <div class="flex justify-end">
             
                     <div class="flex items-center justify-center mt-6 w-12 h-12 rounded-lg border border-[#F1F1F3] text-primary">
-                        <div class="rotate-75">
-            
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z" clip-rule="evenodd" />
-                              </svg>
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
+                          </svg>
+                          
                     </div>
                 </div>
             </div>
@@ -261,12 +264,10 @@
                 <div class="flex justify-end">
             
                     <div class="flex items-center justify-center mt-6 w-12 h-12 rounded-lg border border-[#F1F1F3] text-primary">
-                        <div class="rotate-75">
-            
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z" clip-rule="evenodd" />
-                              </svg>
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
+                          </svg>
+                          
                     </div>
                 </div>
             </div>
@@ -504,16 +505,16 @@
                 </div>
                 <div class="flex justify-center">
                     <button class="flex bg-white p-2">
-                        <a href="#" class="btn month-btn px-6 py-4 rounded bg-primary text-gray-15">Monthly</a>
-                        <a href="#" class="btn year-btn px-6 py-4 rounded text-gray-15">Yearly</a>
+                        <a href="#" class="toggle-btn  month-btn px-6 py-4 rounded bg-primary text-gray-15">Monthly</a>
+                        <a href="#" class="toggle-btn  year-btn  px-6 py-4 rounded text-gray-15">Yearly</a>
                     </button>
                 </div>
             </div>
             
             <div class="container mx-auto">
-                <div class="month-price card grid grid-cols-1 md:grid-cols-2 bg-white p-16 justify-center  mt-16 gap-8 ">
-                    <div class="border border-[#F1F1F3] p-8 flex flex-col items-center justify-center">
-                        <button class="bg-[#FFF9F0] w-[90%] py-3 rounded-lg border border-[#FFEACC]">
+                <div class="month-price card grid grid-cols-1 md:grid-cols-2  bg-white p-16 justify-center  mt-16 gap-8 ">
+                    <div class="border border-[#F1F1F3] bg-red-600 h-[90%] p-8 flex flex-col items-center justify-center">
+                        <button class="bg-[#FFF9F0] w-[90%] h-[90%] py-3 rounded-lg border border-[#FFEACC]">
                             <a href="#" class="text-gray-15 text-[22px]">Free Plan</a>
                         </button>
                         <div class="py-8 ">
@@ -542,7 +543,7 @@
                                             <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                                           </svg>
                                     </div>
-                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Limited course materials and resources.</p>
+                                    <p class="text-[#4C4C4D] text-sm md:text-lg">Limited jjjjjjjjjjjjjjjjjjjjjjlllllllllllllljjjjjjjj course materials and resources.</p>
                                 </li>
     
                                 <li class="flex items-center gap-4 border border-[#F1F1F3] p-2 md:p-4 rounded">
@@ -599,7 +600,7 @@
                         </div>
                     </div>
     
-                    <div class="border border-gray p-4 flex flex-col items-center justify-center">
+                    <div class="border border-gray p-8 flex h-[90%] bg-red-500 flex-col items-center justify-center">
                         <button class="bg-[#FFF9F0] w-[90%] py-3 rounded-lg border border-[#FFEACC]">
                             <a href="#" class="text-gray-15 text-[22px]">Pro Plan</a>
                         </button>

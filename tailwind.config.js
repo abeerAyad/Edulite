@@ -3,7 +3,6 @@
 module.exports = {
   content: [
     './src/**/*.{html,js,jsx,ts,tsx}',
-    "./node_modules/flowbite/**/*.js",
     './public/pages/home/index.html',
     './public/pages/signup/index.html' ,
     './public/pages/courses/index.html' ,
@@ -22,12 +21,6 @@ module.exports = {
      fontFamily: {
        "vietnam":'"Be Vietnam Pro", sans-serif',
      },
-     rotate: {
-      "75":"calc(45deg + 90deg)"
-     },
-     backgroundImage: {
-      "poster":'url("./public/asset/images/video/bg-video.png")'
-     }
     },
   },
    plugins: [require("daisyui")],

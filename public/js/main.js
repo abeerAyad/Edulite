@@ -1,12 +1,12 @@
 const priceMonth = document.querySelector('.month-price');
 const priceYear = document.querySelector('.year-price');
-const monthBtns = [...document.querySelectorAll(".btn")];
+const toggleBtns = [...document.querySelectorAll(".toggle-btn")];
 
-monthBtns.forEach(btn => {
+toggleBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
 
-        monthBtns.forEach(button => button.classList.remove('bg-primary', 'text-white'));
+        toggleBtns.forEach(button => button.classList.remove('bg-primary', 'text-white'));
 
         e.target.classList.add('bg-primary', 'text-white');
 
@@ -22,6 +22,15 @@ monthBtns.forEach(btn => {
 
 
 
+const videoContent = document.getElementById('video-content');
+console.log(videoContent)
+const videoPlay = () => {
+    const video = document.querySelector('.video');
+    video.style.display = 'flex';
+    video.play();
 
-  
+    document.querySelector('.image-overlay').style.display = 'none';
+    document.querySelector('.bg-overlay-custom').style.display = 'none';
+  }
+videoContent.addEventListener('click', videoPlay)
 
