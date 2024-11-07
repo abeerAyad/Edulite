@@ -4,20 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* custom-styles.css */
 .collapse-plus > .collapse-title:after {
     @apply w-12 h-12 bg-[#FFF4E5] rounded-lg flex items-center justify-center text-lg sm:text-xl md:text-3xl;
 }
 
-/* custom-styles.css */
+
 .bg-custom-height {
-  @apply h-[800px] border-[16px] border-white;
+  @apply h-[500px] md:h-[800px] border-[16px] border-white;
 }
+
 .bg-overlay-custom {
     @apply bg-black bg-opacity-30 w-full h-full absolute top-0 left-0 flex items-center justify-center;
-  }
+}
   
-  .circle-border-custom {
+.circle-border-custom {
     @apply w-[72px] h-[72px] bg-white bg-opacity-20 rounded-full border-[6px] border-white border-opacity-30 flex items-center justify-center;
-  }
+}
 
   

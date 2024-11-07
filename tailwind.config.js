@@ -21,6 +21,10 @@ module.exports = {
      fontFamily: {
        "vietnam":'"Be Vietnam Pro", sans-serif',
      },
+     spacing: {
+      '100px': '-100px',
+      '200px': '-200px',
+    },
     },
   },
    plugins: [require("daisyui")],
