@@ -3955,6 +3955,10 @@ details.collapse summary::-webkit-details-marker{
   width: 100%;
 }
 
+.flex-shrink-0{
+  flex-shrink: 0;
+}
+
 .flex-grow{
   flex-grow: 1;
 }
