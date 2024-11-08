@@ -4655,6 +4655,10 @@ details.collapse summary::-webkit-details-marker{
     border-right-width: 1px;
   }
 
+  .md\:border-b{
+    border-bottom-width: 1px;
+  }
+
   .md\:p-11{
     padding: 2.75rem;
   }
@@ -4753,6 +4757,10 @@ details.collapse summary::-webkit-details-marker{
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:border-b{
+    border-bottom-width: 1px;
   }
 }
 
