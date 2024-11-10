@@ -7,11 +7,11 @@
     <!-- Link Output File -->
     <link rel="stylesheet" href="../../../src/output.css">
 </head>
-<body class="font-vietnam bg-[#F7F7F8]">
+<body>
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <div class="flex justify-center items-center md:gap-5 bg-primary mx-4 text-white py-3.5 rounded">
+        <div class="alert_nav flex justify-center items-center md:gap-5 bg-primary mx-4 text-white py-3.5 rounded">
             <h3 class="text-white text-sm md:text-lg pl-8 md:px-0 text-center">Free Courses 🌟 Sale Ends Soon, Get It Now</h3>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 md:w-6 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -26,7 +26,7 @@
                     <div class="logo w-12 h-12 md:w-14 md:h-14 bg-primary flex items-center justify-center rounded">
                         <img src="../../asset/images/header/logo.png" alt="logo" class="object-cover h-8 w-8 md:w-12 md:h-12">
                     </div>
-                    <ul class="hidden md:flex items-center space-x-3 lg:space-x-5">
+                    <ul class="navbar hidden md:flex items-center space-x-3 lg:space-x-5">
                         <li class="w-24 h-12 flex items-center justify-center rounded">
                             <a href="../../../index.html" class="text-gray-15 text-lg">Home</a>
                         </li>
@@ -45,7 +45,7 @@
                     </ul>
                 </div>
                 
-                <div class="flex items-center space-x-5">
+                <div class="nav__right flex items-center space-x-5">
                     <a href="#signup" class="text-sm text-gray-15 px-3 py-2 md:px-8 md:text-lg md:py-3.5 rounded-lg">Sign Up</a>
                     <a href="../login/index.html" class="text-sm bg-primary text-white px-3 py-2 md:px-8 md:text-lg md:py-3.5 rounded-lg">Login</a>
                     
@@ -82,10 +82,10 @@
     <!-- Main -->
      <main>
         <!-- Content -->
-         <section>
+         <div>
             <div class="container mx-auto">
                 <div class="flex flex-col-reverse md:flex-row justify-between items-center gap-12 px-4 md:px-0">
-                    <div>
+                    <div class="card">
                         <h2 class="text-xl md:text-2xl text-gray-15">Students Testimonials</h2>
                         <p class="text-sm md:text-lg text-[#59595A]">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
 
@@ -104,7 +104,7 @@
                         </div>
                     </div>
 
-                    <div class="form w-full bg-white flex flex-col items-center justify-center py-8 rounded  mt-8 md:mt-24">
+                    <div class="card form w-full bg-white flex flex-col items-center justify-center py-8 rounded  my-8 md:my-24">
                         <div class="text-center">
                             <h3 class="font-bold text-xl md:text-4xl mb-2">Sign Up</h3>
                             <p class="text-sm md:text-lg text-[#4C4C4D]">Welcome back! Please log in to access your account.</p>
@@ -165,18 +165,18 @@
                     </div>
                 </div>
             </div>
-         </section>
+         </div>
      </main>
 
 <!-- Footer -->
-<footer class="pt-16 md:pt-32 bg-white mt-16 md:mt-32">
+<footer class="pt-16 md:pt-32 bg-white">
     <div class="container mx-auto">
         <div class="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 px-4 md:px-0">
             <div class="">
                 <div class="logo w-12 h-12 bg-primary rounded flex items-center justify-center rounded mb-5">
                     <img src="../../asset/images/header/logo.png" alt="logo">
                 </div>
-                <ul class="flex flex-col gap-4">
+                <ul class="footer__icon flex flex-col gap-4">
                     <li class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"  class="w-8">
                             <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
@@ -200,7 +200,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="grid grid-cols-2 gap-4 items-center justify-center w-full md:grid-cols-3">
+            <div class="footer__content grid grid-cols-2 gap-4 items-center justify-center w-full md:grid-cols-3">
                 <div class="">
                     <h3 class="font-bold text-xl mb-5"><a href="#home">Home</a></h3>
                     <ul class="flex gap-3 flex-col">
@@ -243,12 +243,13 @@
             </div>
         </div>
         <div>
-            <p class="text-[#656567] text-xl text-center flex justify-center mt-32 align-end pb-8">© 2023 Edulite. All rights reserved.</p>
+            <p class="copy__right text-[#656567] text-xl text-center flex justify-center mt-32 align-end pb-8">© 2023 Edulite. All rights reserved.</p>
         </div>
     </div>
 </footer>
 
 <script src="../../js/menubar.js"></script>
-
+<script src="../../js/scrollreveal.min.js"></script>
+<script src="../../js/scrollReveal.js"></script>
 </body>
 </html>
