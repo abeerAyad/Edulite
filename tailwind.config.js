@@ -25,6 +25,9 @@ module.exports = {
       '100px': '-100px',
       '200px': '-200px',
     },
+    container: {
+      center: true,
+    },
     },
   },
    plugins: [require("daisyui")],

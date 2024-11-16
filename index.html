@@ -17,7 +17,7 @@
 </head>
 <body>
 <!-- Header -->
- <header>
+ <header id="home" >
     <!-- Navbar -->
     
         <div class="alert_nav flex justify-center items-center md:gap-5 bg-primary text-white mx-4 py-3.5 rounded">
@@ -129,7 +129,7 @@
 <!-- Main -->
 <main>
     <!-- Banner Section -->
-    <section class="my-16">
+    <section id="company" class="my-16">
         <div class="container mx-auto">
             <div class="flex items-center justify-center">
                 <div class="banner__card flex flex-col md:flex-row items-center justify-between px-8 py-4 bg-white w-full">
@@ -976,7 +976,9 @@
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 px-2 md:px-0">
             <div class="">
                 <div class="logo w-12 h-12 bg-primary rounded flex items-center justify-center rounded mb-5">
-                    <img src="./public/asset/images/header/logo.png" alt="logo">
+                    <a href="#home">
+                        <img src="./public/asset/images/header/logo.png" alt="logo">
+                    </a>
                 </div>
                 <ul class="footer__icon flex flex-col gap-4">
                     <li class="flex items-center gap-2">
@@ -1002,7 +1004,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__content grid grid-cols-2 gap-4 items-center justify-center w-full md:grid-cols-3">
+            <div class="footer__content grid grid-cols-2 gap-4  justify-center w-full md:grid-cols-3">
                 <div class="">
                     <h3 class="font-bold text-xl mb-5"><a href="#home">Home</a></h3>
                     <ul class="flex gap-3 flex-col">
@@ -1025,9 +1027,9 @@
                 <div>
                     <h3 class="font-bold text-xl mb-5"><a href="#social">Social Profiles</a></h3>
                     <ul class="flex gap-3 items-center">
-                        <li class="w-12 h-12 bg-[#F7F7F8] flex items-center justify-center rounded-lg">
+                        <li class="w-12 h-12 bg-[#F7F7F8] flex items-center justify-center rounded-lg hover:scale-105">
                             <a href="#facebook">
-                                <img src="./public/asset/images/social/facebook -solid.png" alt="facebook">
+                                <img src="./public/asset/images/social/facebook-solid.png" alt="facebook">
                             </a>
                         </li>
                         <li  class="w-12 h-12 bg-[#F7F7F8] flex items-center justify-center rounded-lg">
